@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #333;
+    color: #927575;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.navegador {
+    display: flex;
+    justify-content: center;
+    flex: 1; 
+}
+
+.header .logo img {
+    height: 50px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+}
+nav li a{
+    font-family: Sour Gummy;
+    padding-left: 10px;
+}
+nav li a:hover{
+    background-color: #f03b68;
+    color: #1d1506;
+    border: 5px dashed #6a102a;
+    transition: border 0.2s ease;
+    padding: 2px 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 0 30px;
+}
+
+.header nav ul li {
+    margin-left: 1rem;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    object-fit: cover; /* Escala el video para cubrir toda el área */
+    object-position: 50% 12%;
+    z-index: -2; /* Coloca el video detrás del contenido */
+  }
+
+.contenidouno h1 {
+    color: rgb(237, 231, 118);
+    font-family: Sour Gummy;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgb(218, 231, 153);
+}
+.contenidouno{
+    position: relative;
+    z-index: 1; /* Coloca el texto encima de la lámina */
+    text-align: center;
+    padding: 20px;
+}
+.lamina{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    background-color: rgba(0, 0, 0, 0.5); /* Color gris semitransparente */
+    z-index: -1; /* Coloca la lámina encima del video, pero debajo del texto */
+}
+.botones{
+    margin-top: 20px;
+}
+.button {
+    background-color: #000000;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 0 30px;
+}
+.button:hover {
+    background-color: #e7ac8f;
+    color: #470606;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    margin: 0 30px;
+    border: 4px dashed #b2171d;
+    transition: border 0.3s ease;
+    
+}
+.contact-form {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: Oswald;
+    color: #6a102a;
+}
+
+.contact-form p {
+    margin-bottom: 2rem;
+    font-weight: bolder;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: #6a102a dotted 4px;
+}
+
+/*para posicionar el texto de formulario hacia la izquierda*/
+.form-container form {
+    display: grid;
+    grid-template-columns: auto 2fr; /* Dos columnas: una para el label y otra para el input */
+    gap: 1rem 1rem;
+    align-items: center;
+    padding: 0 60px 0 60px;
+}
+
+.form-container label {
+    text-align: right; /* Alinea el texto a la derecha */
+    padding-right: 10px; /* Añade espacio entre el label y el input */
+    font-weight: bolder;
+    font-family: Dancing Script;
+    font-weight: bolder;
+    font-size: 22px;
+    text-shadow: 2px 2px 4px rgba(192, 21, 21, 0.5);
+}
+.form-container button {
+    width: 100%; /* Hace que los inputs ocupen todo el ancho de su celda */
+    padding: 0.5rem;
+    font-size: 1rem;
+    grid-column: 2 / 3; /* Alinea el botón a la segunda columna, debajo de los inputs */
+    width: fit-content; /* Ajusta el ancho del botón al contenido */
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-weight: bolder;
+    background-color: #000000;
+    color: blanchedalmond;
+    border-radius: 15px;
+}
+button:hover {
+    background-color: #c8d416;
+    transform: scale(1.05);
+    color: #000000;
+}
+/*-------------------------------------*/
+.location {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fbf2abd0;
+}
+.location h2{
+    font-family: Protest Strike;
+    color: #790e73;
+}
+.location p{
+    font-family: Dancing Script;
+    font-size: 30px;
+}
+
+.location .map iframe {
+    width: 100%;
+    height: 450px;
+}
+
+.gallery {
+    padding: 2rem;
+    text-align: center;
+}
+.gallery h2{
+   font-family: Edu AU VIC WA NT Pre;
+   font-weight: bolder;
+   color: #f03b68;
+}
+.gallery p{
+    font-family: Dancing Script;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr); /*3 columnas de 150px*/
+    grid-gap: 20px; /*separa esa medida entre columnas y filas*/
+    grid-template-rows: repeat(2, auto);
+}
+
+.gallery-item {
+    text-align: center;
+    height: auto;
+    background-color: #b29b17;
+    font-weight: bolder;
+    border: #180803 dashed 2px;
+}
+.gallery-item:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
+}
+
+.poste1:hover img{
+    transition: filter 0.3s ease;
+    filter: hue-rotate(45deg); /* Cambia el tono de la imagen */
+}
+.poste2:hover img{
+    filter: grayscale(100%); /* Aplica blanco y negro a la imagen */
+}
+.poste3:hover img{
+    transition: filter 0.3s ease;
+    filter: hue-rotate(45deg); /* Cambia el tono de la imagen */
+}
+.poste4:hover img{
+    filter: grayscale(100%); /* Aplica blanco y negro a la imagen */
+}
+.poste5:hover img{
+    transition: filter 0.3s ease;
+    filter: hue-rotate(45deg); /* Cambia el tono de la imagen */
+}
+.poste6:hover img{
+    filter: grayscale(100%); /* Aplica blanco y negro a la imagen */
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.poste5{
+    grid-column: 1 /span 2;
+    grid-row: 2;
+    
+    
+}
+.poste6{
+    grid-column: 3 /span 2;
+    grid-row: 2;
+    
+}
+.poste1 poste2 poste3 poste4{
+    height: 10px;
+}
+
+/*----------------footer------------*/
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(2, auto); /* 2 filas */
+    gap: 1rem;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footeritem {
+    padding: 0.5rem;
+}
+
+/* Ubicaciones específicas en la cuadrícula */
+.social-icons {
+    grid-column: 1;
+    grid-row: 1;
+}
+.social-icons i {
+    color: #fff;
+}
+
+.student-name {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.contact-info {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.institute-info {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.career-info {
+    grid-column: 2;
+    grid-row: 2;
+}
+strong{
+    color: #d6bb20;
+}
+.teacher-name {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+}
